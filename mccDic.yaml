@@ -1,0 +1,48 @@
+# Here you describe the correspondence between 
+# your bank operations types or categories and splitwise categories.
+# all unspecified categories will be registered as "General"
+# log_category: splitwise_subcategory
+# Example: 
+# Restaurants: Dining out
+
+Restaurants : Dining out
+
+# Here's the list of all subcategories in Splitwise
+#:  Cleaning                                                                                                                                                                      
+#:  Electricity
+#:  Heat/gas
+#:  Other
+#:  Trash
+#:  TV/Phone/Internet
+#:  Water
+#:  General
+#:  Games
+#:  Movies
+#:  Music
+#:  Sports
+#:  Dining out
+#:  Groceries
+#:  Liquor
+#:  Electronics
+#:  Furniture
+#:  Household supplies
+#:  Maintenance
+#:  Mortgage
+#:  Pets
+#:  Rent
+#:  Services
+#:  Bicycle
+#:  Bus/train
+#:  Car
+#:  Gas/fuel
+#:  Hotel
+#:  Parking
+#:  Plane
+#:  Taxi
+#:  Childcare
+#:  Clothing
+#:  Education
+#:  Gifts
+#:  Insurance
+#:  Medical expenses
+#:  Taxes

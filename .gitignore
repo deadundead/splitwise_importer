@@ -1,0 +1,5 @@
+# ignore authentication data file
+config.yaml
+
+# ignore pycache
+__pycache__
