@@ -10,7 +10,9 @@ DISCLAIMER:
 This is not an official API. All the trademarks and copyright belongs to Splitwise.com.
 
 # Installation
-Clone the repository wherever you like on your computer.
+Clone the repository with submodules:
+
+```git clone --recurse-submodules https://github.com/deadundead/splitwise_importer```
 
 # Dependencies
 splitwise_importer depends on the following python packages:
