@@ -1,5 +1,5 @@
 # splitwise_importer
-A simple console-based TUI software to upload your bank account log to Splitwise.
+A simple console-based TUI software written in `Python` to upload your bank account log to Splitwise.
 
 Splitwise_importer works with CSV files exported from your bank App or website.
 Currently you must also specify a Splitwise group. All expenses would be created in this group, and split equally between all members of the group.
@@ -14,6 +14,7 @@ Clone the repository wherever you like on your computer.
 
 # Dependencies
 splitwise_importer depends on the following python packages:
+- `Python 3.7.1` was tested
 - [`Splitwise`](https://github.com/namaggarwal/splitwise/)
 - [`Pandas`](https://pandas.pydata.org/docs/getting_started/install.html)
 - [`PyYaml`](https://pypi.org/project/PyYAML/)
