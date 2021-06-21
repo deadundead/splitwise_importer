@@ -1,3 +1,6 @@
 [submodule "npyscreen"]
 	url = https://github.com/deadundead/npyscreen
 	path = npyscreen
+[submodule "splitwise"]
+	path = splitwise
+	url = https://github.com/rmodi6/splitwise

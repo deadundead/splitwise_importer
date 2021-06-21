@@ -21,7 +21,7 @@ import requests
 import yaml
 import os,sys
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
-#sys.path.append('./splitwise')
+sys.path.insert(0,CURR_DIR+'/splitwise')
 from splitwise import *
 from splitwise.user import ExpenseUser
 #import iso18245

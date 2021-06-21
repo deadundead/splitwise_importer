@@ -19,11 +19,11 @@
 #!/usr/bin/env python3
 import os,sys
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(CURR_DIR+'/npyscreen')
+sys.path.insert(0,CURR_DIR+'/npyscreen')
 import npyscreen
 import pandas
 import yaml
-from splitwise import *
+#from splitwise import *
 from auth import splitwiseConnector
 from math import floor
 
@@ -119,6 +119,7 @@ class MainForm(npyscreen.ActionForm):
     
     def exit_func(self, _input):
         exit(0)
-             
-MyApp = App()
-MyApp.run()
+
+if __name__ == '__main__':             
+    MyApp = App()
+    MyApp.run()
