@@ -1,5 +1,5 @@
 [submodule "npyscreen"]
-	url = https://github.com/deadundead/npyscreen
+	url = https://github.com/npcole/npyscreen.git
 	path = npyscreen
 [submodule "splitwise"]
 	path = splitwise
