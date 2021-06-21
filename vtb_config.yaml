@@ -1,0 +1,49 @@
+# This file contains your authentication data, your id, 
+# target group id, and the layout of your bank operations CSV file.
+# Fill the values and save the file as "config.yaml"
+consumer_key: 
+consumer_secret: 
+api_key: 
+
+# get from the link tp your group
+# https://secure.splitwise.com/#/groups/<group_id> 
+group_id: 
+
+# Specify currency code, hopefully as in ISO 4217.
+# e.g. 'USD','EUR','RUB'
+currency_code: RUR
+
+# This is a layout for VTB(RUS) CSV.
+# column count starts at 0
+# you should inspect your bank CSV file and change corresponding values
+bank_layout:
+  # number of rows to skip
+  skip_rows: 13
+
+  # column number for the payment amount
+  sum_col: 3
+
+  # column number for the MCC code
+  # not used yet, can be commented if absent
+  #mcc_col: 10
+
+  # column number for the operation date
+  date_col: 1
+
+  # column number for the category or type of the operation
+  # e.g. "Grocery stores","Transport" etc.
+  # these are the types you must specify in mccDic.yaml
+  # set to -1 if such column type is not present
+  type_col: -1
+  
+  # column number for operation details 
+  # e.g. - name of the store
+  comment_col: 7
+
+  # column number for the operation status - "OK", "Aborted", etc
+  status_col: 8
+
+  # This parameter specifies whether 
+  # payments in your bank log are negative or positive
+  negative_payments: True
+
