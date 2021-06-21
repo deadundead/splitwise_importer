@@ -57,9 +57,12 @@ class splitwiseConnector:
             for subcat in cat.getSubcategories():
                 self.catDic[subcat.name] = subcat
 
-    def parseEntry(self,entry):        
+    def parseEntry(self,entry):
         parsedEntry = Struct()
-        parsedEntry.type = entry[self.layout.type_col]
+        if self.layout.type_col != -1:
+            parsedEntry.type = entry[self.layout.type_col]
+        else:
+            parsedEntry.type = None
         # identify Expense type
         if parsedEntry.type in self.mccDic:
             # return splitwise category name

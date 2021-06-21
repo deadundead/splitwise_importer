@@ -68,7 +68,8 @@ class MainForm(npyscreen.ActionForm):
     #    self.pager.display()
     def load_data(self,file):
         # read csv file
-        self.csvfile = pandas.read_csv(file,encoding='windows-1251',lineterminator='\n',delimiter=';',decimal=',')
+        self.csvfile = pandas.read_csv(file,encoding='windows-1251',delimiter=';',decimal=',', skiprows=self.layout.skip_rows, header=None)
+        self.csvfile[self.layout.sum_col] = [float(str(val).replace(' ','').replace(',','.')) for val in self.csvfile[self.layout.sum_col].values]
         
         if self.layout.negative_payments:
             # sort only negative operations
@@ -85,7 +86,7 @@ class MainForm(npyscreen.ActionForm):
         # get number of elements 
         numel = self.csvfile.shape[0]  
         # set list of column numbers
-        columns = [self.layout.date_col, self.layout.status_col, self.layout.sum_col, self.layout.type_col, self.layout.comment_col]
+        columns = list(filter((-1).__ne__, [self.layout.date_col, self.layout.status_col, self.layout.sum_col, self.layout.type_col, self.layout.comment_col]))
         # set multiselect values
         vals = [entries.iloc[i,columns].to_string(index=False) for i in range(0,numel)]
         return vals
