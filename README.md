@@ -17,7 +17,7 @@ Clone the repository with submodules:
 # Dependencies
 splitwise_importer depends on the following python packages:
 - `Python 3.7.1` was tested
-- [`Splitwise`](https://github.com/namaggarwal/splitwise/)
+- [`Splitwise`](https://github.com/namaggarwal/splitwise/) (forked version included until PR will be merged)
 - [`Pandas`](https://pandas.pydata.org/docs/getting_started/install.html)
 - [`PyYaml`](https://pypi.org/project/PyYAML/)
 - [`npyscreen`]( https://pypi.org/project/npyscreen/) (included with a fix)
