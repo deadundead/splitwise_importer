@@ -17,6 +17,9 @@ currency_code:
 # column count starts at 0
 # you should inspect your bank CSV file and change corresponding values
 bank_layout:
+  # number of rows to skip
+  skip_rows: 0
+
   # column number for the payment amount
   sum_col: 4
 
@@ -30,6 +33,7 @@ bank_layout:
   # column number for the category or type of the operation
   # e.g. "Grocery stores","Transport" etc.
   # these are the types you must specify in mccDic.yaml
+  # set to -1 if such column type is not present
   type_col: 9
 
   # column number for operation details 
