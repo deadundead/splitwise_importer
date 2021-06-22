@@ -36,7 +36,7 @@ class App(npyscreen.StandardApp):
         self.addForm("MAIN", MainForm, name="Splitwise Importer")
 
 class LogBox(npyscreen.BoxTitle):
-    # TitleBufferPager теперь будет окружен боксом
+    # TitleBufferPager now will be box-wrapped
     _contained_widget = npyscreen.BufferPager
 
 class MainForm(npyscreen.ActionForm):
