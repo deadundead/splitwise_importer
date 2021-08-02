@@ -18,7 +18,7 @@ currency_code:
 # you should inspect your bank CSV file and change corresponding values
 bank_layout:
   # number of rows to skip
-  skip_rows: 0
+  skip_rows: 1
 
   # column number for the payment amount
   sum_col: 4
