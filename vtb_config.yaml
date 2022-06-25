@@ -20,6 +20,10 @@ bank_layout:
   # number of rows to skip
   skip_rows: 13
 
+  # file encoding
+  # windows-1251, UTF-8, etc
+  encoding: "windows-1251"
+
   # column number for the payment amount
   sum_col: 3
 

@@ -77,7 +77,11 @@ class splitwiseConnector:
         parsedEntry.date = strftime("%d/%m/%Y",ts.timetuple())
         parsedEntry.description = entry[self.layout.comment_col]
         # round cost
-        parsedEntry.paid = round(-1.*(entry[self.layout.sum_col]),2)
+        
+        if self.layout.negative_payments:
+            parsedEntry.paid = round(-1.*(entry[self.layout.sum_col]),2)
+        else:
+            parsedEntry.paid = round((entry[self.layout.sum_col]),2)
         return parsedEntry
 
 
