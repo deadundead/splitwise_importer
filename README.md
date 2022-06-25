@@ -21,7 +21,7 @@ splitwise_importer depends on the following packages installable via pip:
 - [`requests-oauthlib`](https://pypi.org/project/requests-oauthlib/)
 
 Some packages are included as git submodules due to current PyPI versions missing various fixes:
-- [`Splitwise`](https://github.com/rmodi6/splitwise)
+- [`Splitwise`](https://github.com/namaggarwal/splitwise)
 - [`npyscreen`](https://github.com/npcole/npyscreen)
 
 # How to use
@@ -31,12 +31,13 @@ splitwise_importer works with two main config files:
 - `mccDic.yaml`
 
 To prepare the configuration files, you must:
+- Open `example_config.yaml` file in text editor.
 - [Get](https://secure.splitwise.com/apps) the API key, consumer ID and consumer Secret from Splitwise.
 - Download your bank account log in `CSV` format for the dates of interest. See the layout (which column corresponds to which data).
-- Specify the `group_id` from the link to your group `https://secure.splitwise.com/#/groups/<group_id>`.
+- Copy `group_id` from the link to your group `https://secure.splitwise.com/#/groups/<group_id>`.
 - Fill the `example_config.yaml` file with auth and layout data. Save it as `config.yaml`.
 - In the `mccDic.yaml` file specify the correspondence between your bank payment types and Splitwise categories.
-e.g. `Grocery store : Groceries`. The whole list of categories is given in the file. If you don'care, just create a dummy entry e.g. `Dummy : General`. All unspecified catagories will be set as 'General' expenses.
+e.g. `Grocery store : Groceries`. The whole list of categories is given in the file. If you don't care, just create a dummy entry e.g. `Dummy : General`. All unspecified catagories will be set as 'General' expenses.
 
 After this you are hopefully set up and ready to go!
 

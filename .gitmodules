@@ -3,4 +3,4 @@
 	path = npyscreen
 [submodule "splitwise"]
 	path = splitwise
-	url = https://github.com/rmodi6/splitwise
+	url = https://github.com/namaggarwal/splitwise.git
