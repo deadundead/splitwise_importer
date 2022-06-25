@@ -68,7 +68,7 @@ class MainForm(npyscreen.ActionForm):
     #    self.pager.display()
     def load_data(self,file):
         # read csv file
-        self.csvfile = pandas.read_csv(file,encoding='windows-1251',delimiter=';',decimal=',', skiprows=self.layout.skip_rows, header=None)
+        self.csvfile = pandas.read_csv(file,encoding=self.layout.encoding,delimiter=';',decimal=',', skiprows=self.layout.skip_rows, header=None)
         self.csvfile[self.layout.sum_col] = [float(str(val).replace(' ','').replace(',','.')) for val in self.csvfile[self.layout.sum_col].values]
         
         if self.layout.negative_payments:
